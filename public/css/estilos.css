@@ -1,29 +1,50 @@
 /* Estilos del Menu */
-
-nav, .offcanvas{
+nav, .offcanvas {
     background-color: #1e293b;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: none;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     outline: none;
     box-shadow: none;
 }
 
-@media(max-width:768px){
-    .navbar-nav > li:hover{
+@media(max-width:768px) {
+    .navbar-nav > li:hover {
         background-color: #63b6c7;
     }
 }
 
-.navbar-nav > li:hover{
+.navbar-nav > li:hover {
     background-color: #6dcadd;
-    color: black
+    color: black;
 }
 
-.pst{
+.pst {
     color: aliceblue;
+}
+
+
+
+/* Estilos del footer */
+footer {
+    background-color: #1e293b;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #63b6c7; /* Color al pasar el mouse */
+}
+
+footer p {
+    color: white; /* Aseguramos que el texto sea blanco */
 }

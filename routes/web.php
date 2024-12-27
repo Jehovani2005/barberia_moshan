@@ -2,10 +2,17 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ServicioController;
 
 Route::get('/', function () {
     return view('inicio');
 });
+
+Route::get('/servicios', function () {
+    return view('servicio');
+});
+
+Route::resource('servicios', ServicioController::class); //PARA LOS SERVICIOS
 
 Route::get('/dashboard', function () {
     return view('dashboard');
