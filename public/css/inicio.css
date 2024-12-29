@@ -18,13 +18,18 @@ body {
 
 .logo-container {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
     width: 750px; /* Ajusta el tamaño del logotipo */
     height: auto;
+    max-width: 100%; /* Asegura que el logo se ajuste en pantallas pequeñas */
 }
 
+/* Estilos para los textos */
 .bienvenida {
     font-size: 3em;
     font-weight: bold;
@@ -37,6 +42,7 @@ body {
     max-width: 600px;
 }
 
+/* Botón CTA */
 .cta-button {
     background-color: #f39c12; /* Color cálido, estilo vintage */
     color: white;
@@ -49,4 +55,62 @@ body {
 
 .cta-button:hover {
     background-color: #e67e22; /* Cambio de color al pasar el cursor */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1024px) {
+    .logo {
+        width: 70%; /* Reduce el tamaño del logo en pantallas medianas */
+    }
+
+    .bienvenida {
+        font-size: 2.5em; /* Reduce el tamaño de la fuente de bienvenida */
+    }
+
+    .descripcion {
+        font-size: 1.1em;
+        max-width: 80%; /* Hace que la descripción ocupe un 80% del contenedor */
+    }
+
+    .cta-button {
+        font-size: 1.1em; /* Reduce ligeramente el tamaño del botón */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 90%; /* Logo más pequeño en pantallas más pequeñas */
+    }
+
+    .bienvenida {
+        font-size: 2em; /* Texto más pequeño para pantallas pequeñas */
+    }
+
+    .descripcion {
+        font-size: 1em;
+        max-width: 90%; /* La descripción puede ocupar más espacio */
+    }
+
+    .cta-button {
+        font-size: 1em; /* Asegura que el botón sea más pequeño */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80%; /* Logo aún más pequeño en dispositivos muy pequeños */
+    }
+
+    .bienvenida {
+        font-size: 1.5em; /* Ajuste para pantallas muy pequeñas */
+    }
+
+    .descripcion {
+        font-size: 0.9em; /* Reducción en el tamaño de la descripción */
+        max-width: 95%; /* La descripción ocupa casi todo el ancho */
+    }
+
+    .cta-button {
+        font-size: 0.9em; /* Botón más pequeño */
+    }
 }
